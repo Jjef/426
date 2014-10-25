@@ -1,1 +1,52 @@
-//
+/*
+*NOTE: large button sizes for ease of use
+*/
+
+body {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    background-color: gray;
+}
+
+#description {
+	border: 2px groove #18CAE6;
+}
+
+#mockup {
+	margin-top: 20px;
+	border: 2px groove #18CAE6;
+}
+
+#description, #mockup, #storymode, #arcademode, #gameplaymockup {
+	background-image: url("tronwp.jpg");
+	background-repeat: no-repeat;
+    background-size: 100%100%;
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
+    border: 2px groove #18CAE6;
+}
+
+.modebutton, .storybutton{
+    width: 45em;  
+    height: 18em;
+    margin: 2em;
+}
+
+.gamebutton, #songbutton {
+	width: 30em;
+	height: 15em;
+	margin: 2em;
+}
+
+input[type=radio] { 
+	-webkit-transform: scale(3, 3); margin: 3em 3em 3em 3em; 
+	margin-left: 10em;
+	margin-right: 2em;
+} 
+
+.modebutton, .storybutton, #songbutton, .gamebutton {
+	background-color: black;
+	color: #18CAE6;
+	border: 5px inset white;
+}
