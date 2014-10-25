@@ -1,1 +1,98 @@
-//file
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tuneventure</title>
+		<link rel="stylesheet" type="text/css" href="a3.css">
+	</head>
+
+	<body>
+		<!-- This is the description of the project -->
+		<div id = "description">
+
+			<!-- This contains the title and group members -->
+			<h1> Tuneventure </h1>
+			<div id = "people"> Team Members: </br>
+				<label>Brandon Lam</label></br>
+				<label>Spencer Byers</label></br>
+				<label>Jonathan Jefferson</label></br>
+			</div>
+
+			<!-- This is some info about the game development -->
+			<h2> Project Description </h2>
+			<div class = "descriptiontext">
+				Our project will be a switch-accessible, audio driven game. The game will be based around song-puzzles that involve rearranging shuffled song clips into the correct order. Two modes will be available: a story mode utilizing pre-chosen songs representing varying eras from history, and an arcade mode utilizing a song bank from which the user can select a song. Since the page is intended to be accessible, it will be a fairly simple (but attractive) design. For game functionality we intend to explore the webaudio API or an alternative to use with jquery/javascript. We will potentially store user accessibility preferences (such as one switch, two switch, mouse input), difficulty preferences, song preferences for the arcade mode, and progress for the story mode. 
+			</div>
+			<br></br>
+			<div class = "descriptiontext">
+				Basic functionality for both modes should be completed by the due date. We will also attempt to allow a user to submit his/her own song for the arcade version of the game. Below is a mockup for the opening page of our game.
+			</div>
+			<br></br>
+		</div>	
+
+		<!-- This is the project mock-up -->
+		<h2> Project Mockup </h2>
+		<div id = "mockup">
+			<div id  = "mockuptitle"> Tuneventure </div>
+			
+			<!--Contains the title the players will see - some kind of audience "hook" -->
+			<div id = "subtitle">Catchy Thing Like WELCOME TO THE ADVENTURE OF A LIFETIME</div>
+			<div id = "modechoice" class = "gamechoice"> Choose Your Game Mode!</div>
+
+			<!-- This contains the game mode option selectors (story vs. arcade) -->
+			<form id = "modechoice">
+				<button type = "submit" class = "modebutton" id = "storybutton">Story Mode</button>
+				<button type = "submit" class = "modebutton" id = "arcadebutton">Arcade Mode</button>
+			
+				<!-- This contains the buttons to select the difficulty of the song divisions -->
+				<div class = "gamechoice">Choose the Degree of Difficulty</div>
+					<input type = "radio" name = "degree" value = "0">0
+					<input type = "radio" name = "degree" value = "1">1
+					<input type = "radio" name = "degree" value = "2">2
+					<input type = "radio" name = "degree" value = "3">3
+					<input type = "radio" name = "degree" value = "4" checked = "checked">4
+			</form>
+		</div>
+
+		</br>
+		<div>Below are rough mockups for the game mode UI's</div>
+		</br>
+
+		<!-- This area will contain story mode buttons -->
+		<div id = "storymode">
+			<div>Story Mode</div>
+			<!-- This form contains the submission buttons to control the new/old game -->
+			<form id = "storymodeform">
+				<button type = "submit" class = "storybutton" id = "continuebutton">Continue Your Journey</button>
+				<button type = "submit" class = "storybutton" id = "newgame">Start a New Journey</button>
+			</form>
+		</div>
+		</br>
+		
+		<!-- This area will contain the songs to choose for the arcade mode -->
+		<div id = "arcademode">
+			<form id = "arcademodeform">
+				<div>Choose a Song!</div>
+				<button id = "songbutton">Song1</button></br>
+				<button id = "songbutton">Song2</button></br>
+				<button id = "songbutton">Song3</button></br>
+				<button id = "songbutton">Long list of songs</button></br>
+			</form>
+		</div>
+
+		<br></br>
+		<div>Below is a mockup for the game play UI</div>
+		<br></br>
+		
+		<!-- This section is the game play section, users will order sub sections of songs here -->
+		<div id = "gameplaymockup">
+			<div id = "songtitle">Song Title Goes Here</div>
+			<div id = "choose">Choose the order of the song!</div>
+			<button class = "gamebutton" id = "button1">One</button>
+			<button class = "gamebutton" id = "button2">Two</button> </br>
+			<button class = "gamebutton" id = "button3">Three</button>
+			<button class = "gamebutton" id = "button4">Four</button>
+		</div>			
+	</body>
+</html>
